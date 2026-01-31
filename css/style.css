@@ -1697,6 +1697,11 @@ h6 {
     border-radius: 6px;
 }
 
+/* Hide mobile line breaks on desktop */
+.mobile-br {
+    display: none;
+}
+
 .manga-asset i {
     color: var(--secondary-color);
 }
@@ -2272,6 +2277,11 @@ h6 {
 
         .success-slider {
             padding: 60px 0;
+        }
+
+        /* Show mobile line breaks */
+        .mobile-br {
+            display: inline;
         }
     }
 }
