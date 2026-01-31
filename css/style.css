@@ -1860,12 +1860,12 @@ h6 {
             flex-direction: column;
         }
 
-            .hero-text {
-        margin-bottom: 3rem;
-        order: 2;
-        padding-left: 0;
-        text-align: center;
-    }
+        .hero-text {
+            margin-bottom: 3rem;
+            order: 2;
+            padding-left: 0;
+            text-align: center;
+        }
 
         .hero-image {
             order: 1;
@@ -1952,16 +1952,15 @@ h6 {
         }
 
         .hero-title {
-            font-size: clamp(1.4rem, 6vw, 2rem);
+            font-size: clamp(1.8rem, 7vw, 2.5rem);
             /* Responsive sizing */
             line-height: 1.4;
             margin-bottom: 1.5rem;
             white-space: normal;
             word-wrap: break-word;
+            text-align: center;
         }
 
-                    text-align: center;
-        
         .hero-title span {
             display: inline-block;
             /* Ensure spans behave nicely */
@@ -1978,13 +1977,12 @@ h6 {
             font-size: 0.8rem;
             padding: 0.4rem 1rem;
             margin-bottom: 1.5rem;
-        }
-
-                    display: block;
+            display: block;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-        
+        }
+
         .hero-stats {
             display: flex;
             flex-direction: column;
@@ -2142,15 +2140,16 @@ h6 {
             gap: 1.5rem;
         }
 
-            .business-model {
-        flex-direction: column;
-        align-items: center;
-    }
+        .business-model {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .model-arrow {
-        transform: rotate(90deg);
-        margin: 1rem 0;
-    }
+        .model-arrow {
+            transform: rotate(90deg);
+            margin: 1rem 0;
+        }
+
         .strength-content {
             grid-template-columns: 1fr !important;
         }
@@ -2159,8 +2158,10 @@ h6 {
             width: 100%;
         }
 
+
         .asset-arrow {
             transform: rotate(90deg);
             margin: 1rem 0;
         }
     }
+}
