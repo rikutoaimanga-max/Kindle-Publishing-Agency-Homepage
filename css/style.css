@@ -278,9 +278,8 @@ h6 {
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
