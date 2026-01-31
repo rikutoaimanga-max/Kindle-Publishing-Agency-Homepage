@@ -1860,10 +1860,12 @@ h6 {
             flex-direction: column;
         }
 
-        .hero-text {
-            margin-bottom: 3rem;
-            order: 2;
-        }
+            .hero-text {
+        margin-bottom: 3rem;
+        order: 2;
+        padding-left: 0;
+        text-align: center;
+    }
 
         .hero-image {
             order: 1;
@@ -2133,6 +2135,15 @@ h6 {
             gap: 1.5rem;
         }
 
+            .business-model {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model-arrow {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
         .strength-content {
             grid-template-columns: 1fr !important;
         }
