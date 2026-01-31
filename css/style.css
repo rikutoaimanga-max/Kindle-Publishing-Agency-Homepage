@@ -1697,9 +1697,9 @@ h6 {
     border-radius: 6px;
 }
 
-/* Hide mobile line breaks on desktop */
+/* Show line breaks on all devices */
 .mobile-br {
-    display: none;
+    display: inline;
 }
 
 .manga-asset i {
