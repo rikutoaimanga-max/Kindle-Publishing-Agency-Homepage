@@ -1948,12 +1948,12 @@ h6 {
 
         /* Hero Section - Robust Optimization */
         .hero {
-            padding: 120px 0 60px;
+            padding: 120px 0 40px;
             min-height: auto;
         }
 
         .hero-title {
-            font-size: clamp(2rem, 8vw, 3rem);
+            font-size: clamp(2.2rem, 9vw, 3.5rem);
             /* Responsive sizing */
             line-height: 1.4;
             margin-bottom: 1.5rem;
