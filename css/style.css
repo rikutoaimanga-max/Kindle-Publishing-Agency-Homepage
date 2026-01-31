@@ -1960,6 +1960,8 @@ h6 {
             word-wrap: break-word;
         }
 
+                    text-align: center;
+        
         .hero-title span {
             display: inline-block;
             /* Ensure spans behave nicely */
@@ -1978,6 +1980,11 @@ h6 {
             margin-bottom: 1.5rem;
         }
 
+                    display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        
         .hero-stats {
             display: flex;
             flex-direction: column;
