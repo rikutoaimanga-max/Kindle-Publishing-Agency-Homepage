@@ -2315,6 +2315,11 @@ h6 {
             align-items: center;
         }
 
+        .model-card {
+            width: 100%;
+            min-height: 400px;
+        }
+
         .model-arrow {
             transform: rotate(90deg);
             margin: 1rem 0;
