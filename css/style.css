@@ -2320,9 +2320,16 @@ h6 {
             min-height: 400px;
         }
 
-        .model-arrow {
-            transform: rotate(90deg);
-            margin: 1rem 0;
+        .model-arrow i {
+            display: none;
+        }
+
+        .model-arrow::before {
+            content: "\f338";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 3rem;
+            color: var(--secondary-color);
         }
 
         .strength-content {
