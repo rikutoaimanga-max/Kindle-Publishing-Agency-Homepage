@@ -811,12 +811,24 @@ h6 {
 
 .model-card {
     flex: 1;
-    background: var(--background-color);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
     transition: var(--transition-base);
-    border: 2px solid transparent;
+    border: 3px solid transparent;
+    position: relative;
+}
+
+/* Client card - warm gold theme */
+.model-card.client {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+    border-color: #c29b40;
+}
+
+/* Creator card - cool blue theme */
+.model-card.creator {
+    background: linear-gradient(135deg, #e6f2ff 0%, #cce5ff 100%);
+    border-color: #3b82f6;
 }
 
 .model-card:hover {
@@ -834,12 +846,21 @@ h6 {
 }
 
 .model-header i {
-    font-size: 2rem;
-    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.model-card.client .model-header i {
+    color: #c29b40;
+}
+
+.model-card.creator .model-header i {
+    color: #3b82f6;
 }
 
 .model-header h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 .model-content {
@@ -853,11 +874,16 @@ h6 {
 
 .model-give .label,
 .model-get .label {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    display: inline-block;
+    font-size: 0.85rem;
+    color: white;
+    background: var(--primary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .model-give p,
@@ -870,16 +896,38 @@ h6 {
 }
 
 .model-give i {
-    color: var(--error-color);
+    color: #ef4444;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .model-get i {
-    color: var(--success-color);
+    color: #10b981;
+    font-size: 1.1rem;
 }
 
 .model-arrow {
-    font-size: 2rem;
-    color: var(--text-light);
+    font-size: 3rem;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
 }
 
 .about-features {
